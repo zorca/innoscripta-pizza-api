@@ -1,9 +1,9 @@
 {
-    "name": "laravel/laravel",
+    "name": "zorca/innoscripta-pizza-api",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Innoscripta Pizza API.",
     "keywords": [
-        "framework",
+        "test",
         "laravel"
     ],
     "license": "MIT",
