@@ -18,9 +18,9 @@ cache:
   - "$HOME/.composer/cache"
 
 before_script:
+  - composer install --no-interaction
   - cp .env.example .env
   - php artisan key:generate
-  - composer install --no-interaction
 
 script:
   - vendor/bin/phpunit
