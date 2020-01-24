@@ -18,8 +18,8 @@ cache:
   - "$HOME/.composer/cache"
 
 before_script:
-  - phpenv rehash
-  - composer install
+  - cp .env.example .env
+  - composer install --no-interaction
 
 script:
   - vendor/bin/phpunit
