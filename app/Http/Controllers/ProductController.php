@@ -19,6 +19,9 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
+        if (Product::where('name', $request->post('name'))->first()) {
+            return response()->json('Product with this name already exists', 409);
+        }
         return Product::create($request->all());
     }
 

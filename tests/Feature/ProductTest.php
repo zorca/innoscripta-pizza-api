@@ -27,6 +27,7 @@ class ProductTest extends TestCase
                 'type' => 'pizza',
                 'description' => 'Slices of tasty pepperoni & creamy mozzarella.',
                 'properties' => 'Mozarella, Pepperoni, Tomatoes, BBQ sauce',
+                'price' => 10.10,
                 'created_at' => $time,
                 'updated_at' => $time,
             ]);

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $fillable = ['name', 'type', 'description', 'properties'];
+    protected $fillable = ['name', 'type', 'description', 'properties', 'price'];
 
     protected $casts = [
         'price' => 'float',
