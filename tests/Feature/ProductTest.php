@@ -57,5 +57,19 @@ class ProductTest extends TestCase
                 'type' => 'salad',
             ]);
     }
+
+    public function testsProductsAreDeletedCorrectly()
+    {
+        $product = Product::create([
+            'name' => 'Test Pizza',
+            'type' => 'pizza',
+            'description' => 'Slices of tasty pepperoni & creamy mozzarella.',
+            'properties' => 'Mozarella, Pepperoni, Tomatoes, BBQ sauce',
+            'price' => 10.10,
+        ]);
+
+        $this->json('DELETE', '/api/products/' . $product->id, [])
+            ->assertStatus(204);
+    }
 }
 
