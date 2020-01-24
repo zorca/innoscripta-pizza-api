@@ -1,0 +1,26 @@
+sudo: false
+
+language: php
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+matrix:
+  fast_finish: true
+  include:
+  - php: '7.2'
+
+cache:
+  directories:
+  - vendor
+  - "$HOME/.composer/cache"
+
+before_script:
+  - cp .env.example .env
+  - php artisan key:generate
+  - composer install --no-interaction
+
+script:
+  - vendor/bin/phpunit
