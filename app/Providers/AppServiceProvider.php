@@ -14,9 +14,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->extend('command.model.make', function ($command, $app) {
-            return new ModelMakeCommand($app['files']);
-        });
+        $this->app->extend(
+            'command.model.make', function ($command, $app) {
+                return new ModelMakeCommand($app['files']);
+            }
+        );
     }
 
     /**
