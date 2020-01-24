@@ -14,10 +14,12 @@
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
+        "escapestudios/symfony2-coding-standard": "3.x-dev",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
+        "phpstan/phpstan": "^0.12.7",
         "phpunit/phpunit": "^8.0"
     },
     "config": {
