@@ -1,0 +1,13 @@
+pizza-api.zorca.org:
+  domain_local: innoscripta-pizza-api.test
+  domain_remote: pizza-api.zorca.org
+  repository: git@gitlab.com:zorca/innoscripta-pizza-api.git
+  deploy_path: ~/webapps/pizza-api
+  hostname: 94.176.237.153
+  user: zorca
+  identityFile: null
+  forwardAgent: true
+  multiplexing: false
+  sshOptions:
+    UserKnownHostsFile: /dev/null
+    StrictHostKeyChecking: no
