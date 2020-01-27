@@ -43,3 +43,5 @@ and prepare database with demo data:
 Then start a development server at http://localhost:8000:
 
 ``php artisan serve``
+
+Follow the instructions on this page http://localhost:8000 in your browser.
