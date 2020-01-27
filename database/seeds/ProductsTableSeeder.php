@@ -85,11 +85,11 @@ class ProductsTableSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'name' => 'Havaiian',
+                    'name' => 'Hawaiian',
                     'type' => 'pizza',
                     'description' => 'Havaiian pizza with chicken and pineapple slices.',
                     'properties' => 'Chicken, Pineapple, Mozarella, Domino\'s sauce',
-                    'image' => 'https://pizza-api.zorca.org/default-images/havaiian.jpg',
+                    'image' => 'https://pizza-api.zorca.org/default-images/hawaiian.jpg',
                     'price' => 14.85,
                     'created_at' => now(),
                     'updated_at' => now(),
