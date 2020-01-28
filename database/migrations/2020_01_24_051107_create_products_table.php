@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('type')->nullable();
             $table->text('description')->nullable();
             $table->text('properties')->nullable();
+            $table->string('image')->default('https://pizza-api.zorca.org/default-images/default.jpg');
             $table->decimal('price', 6, 2)->default(0);
             $table->timestamps();
         });
