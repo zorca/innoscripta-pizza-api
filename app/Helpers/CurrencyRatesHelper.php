@@ -64,7 +64,7 @@ class CurrencyRatesHelper
     public function transformEurToUsd(float $euro)
     {
         $currentResult = $this->getAll();
-        return (float) round($euro * $currentResult['rates']['USD'], 2);
+        return (float) round($euro / $currentResult['rates']['USD'], 2);
     }
 
     /**
