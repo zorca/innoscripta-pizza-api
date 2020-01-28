@@ -2,6 +2,10 @@
 
 <a href="https://travis-ci.org/zorca/innoscripta-pizza-api"><img src="https://travis-ci.org/zorca/innoscripta-pizza-api.svg" alt="Build Status"></a>
 
+## Working API Example
+
+<a href="https://pizza-api.zorca.org/">https://pizza-api.zorca.org/</a>
+
 ## Project Installation
 
 ### Server Requirements
