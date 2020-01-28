@@ -68,6 +68,16 @@ class CurrencyRatesHelper
     }
 
     /**
+     * @param float $euro
+     * @return float
+     */
+    public function rate()
+    {
+        $currentResult = $this->getAll();
+        return (float) $currentResult['rates']['USD'];
+    }
+
+    /**
      *
      * Get data from remote service.
      *
